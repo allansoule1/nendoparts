@@ -8,8 +8,18 @@
     "start": "next start"
   },
   "dependencies": {
+    "cypress": "^6.0.1",
     "next": "9.5.3",
+    "prop-types": "^15.7.2",
     "react": "16.13.1",
     "react-dom": "16.13.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.10.0",
+    "eslint-plugin-react": "^7.21.3",
+    "msw": "^0.21.2",
+    "prettier": "2.1.2",
+    "stylelint": "^13.7.2",
+    "stylelint-config-standard": "^20.0.0"
   }
 }
