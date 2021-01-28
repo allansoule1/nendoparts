@@ -1,11 +1,11 @@
 import { setupWorker, rest } from 'msw'
 
 export const handlers = [
-  rest.get('/nendoparts', (req, res, ctx) => {
+  rest.get('http://localhost:3000/nendoparts', (req, res, ctx) => {
     return res(
       ctx.status(200),
       ctx.json(
-      {
+      [{
         name : 'Smiling face',
         type : 'Head',
         price: '3€',
@@ -15,7 +15,7 @@ export const handlers = [
         image : ''
       },
       {name : 'Hunter_AA_hair',
-        type : 'cheveux',
+        type : 'Hair',
         price: '50',
         base_character: 'Hunter',
         reference: 'Hunter_hair_01',
@@ -24,7 +24,7 @@ export const handlers = [
       },
 
         {name : 'Naruto_bust',
-        type : 'buste',
+        type : 'bust',
         price: '12',
         base_character: 'Naruto',
         reference: 'Naruto_bust_12',
@@ -48,7 +48,7 @@ export const handlers = [
         reference: '5447',
         remaining_stocks: '89',
         image : ''
-      }
+      }]
       )
     )
   }),
