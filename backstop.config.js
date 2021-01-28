@@ -1,4 +1,4 @@
-{
+module.exports = {
   "id": "backstop_default",
   "viewports": [
     {
@@ -15,6 +15,10 @@
   "onBeforeScript": "puppet/onBefore.js",
   "onReadyScript": "puppet/onReady.js",
   "scenarios": [
+    {
+     "label": "Nendo Viewpage",
+     "url": "http://localhost:3000/nendos"
+    },
     {
       "label": "BackstopJS Homepage",
       "cookiePath": "backstop_data/engine_scripts/cookies.json",

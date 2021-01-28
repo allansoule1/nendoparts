@@ -9,7 +9,7 @@ export default function FirstPost({ parts }) {
             <Head>
                 <title>Nendo parts</title>
             </Head>
-            <h1>Nendo Parts to buy !</h1>
+            <h1>Nendo Parts to ACHETER !</h1>
             {
               <ul>
             {parts.map((part) => (

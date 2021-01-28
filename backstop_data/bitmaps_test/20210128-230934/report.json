@@ -1,10 +1,10 @@
-report({
+{
   "testSuite": "BackstopJS",
   "tests": [
     {
       "pair": {
         "reference": "..\\bitmaps_reference\\backstop_default_Nendo_Viewpage_0_document_0_phone.png",
-        "test": "..\\bitmaps_test\\20210128-231232\\backstop_default_Nendo_Viewpage_0_document_0_phone.png",
+        "test": "..\\bitmaps_test\\20210128-230934\\backstop_default_Nendo_Viewpage_0_document_0_phone.png",
         "selector": "document",
         "fileName": "backstop_default_Nendo_Viewpage_0_document_0_phone.png",
         "label": "Nendo Viewpage",
@@ -18,17 +18,15 @@ report({
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "1.38",
-          "analysisTime": 12
-        },
-        "diffImage": "..\\bitmaps_test\\20210128-231232\\failed_diff_backstop_default_Nendo_Viewpage_0_document_0_phone.png"
+          "misMatchPercentage": "0.00"
+        }
       },
-      "status": "fail"
+      "status": "pass"
     },
     {
       "pair": {
         "reference": "..\\bitmaps_reference\\backstop_default_Nendo_Viewpage_0_document_1_tablet.png",
-        "test": "..\\bitmaps_test\\20210128-231232\\backstop_default_Nendo_Viewpage_0_document_1_tablet.png",
+        "test": "..\\bitmaps_test\\20210128-230934\\backstop_default_Nendo_Viewpage_0_document_1_tablet.png",
         "selector": "document",
         "fileName": "backstop_default_Nendo_Viewpage_0_document_1_tablet.png",
         "label": "Nendo Viewpage",
@@ -42,17 +40,15 @@ report({
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "0.23",
-          "analysisTime": 24
-        },
-        "diffImage": "..\\bitmaps_test\\20210128-231232\\failed_diff_backstop_default_Nendo_Viewpage_0_document_1_tablet.png"
+          "misMatchPercentage": "0.00"
+        }
       },
-      "status": "fail"
+      "status": "pass"
     },
     {
       "pair": {
         "reference": "..\\bitmaps_reference\\backstop_default_BackstopJS_Homepage_0_document_0_phone.png",
-        "test": "..\\bitmaps_test\\20210128-231232\\backstop_default_BackstopJS_Homepage_0_document_0_phone.png",
+        "test": "..\\bitmaps_test\\20210128-230934\\backstop_default_BackstopJS_Homepage_0_document_0_phone.png",
         "selector": "document",
         "fileName": "backstop_default_BackstopJS_Homepage_0_document_0_phone.png",
         "label": "BackstopJS Homepage",
@@ -76,7 +72,7 @@ report({
     {
       "pair": {
         "reference": "..\\bitmaps_reference\\backstop_default_BackstopJS_Homepage_0_document_1_tablet.png",
-        "test": "..\\bitmaps_test\\20210128-231232\\backstop_default_BackstopJS_Homepage_0_document_1_tablet.png",
+        "test": "..\\bitmaps_test\\20210128-230934\\backstop_default_BackstopJS_Homepage_0_document_1_tablet.png",
         "selector": "document",
         "fileName": "backstop_default_BackstopJS_Homepage_0_document_1_tablet.png",
         "label": "BackstopJS Homepage",
@@ -99,4 +95,4 @@ report({
     }
   ],
   "id": "backstop_default"
-});
+}
