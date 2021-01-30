@@ -1,5 +1,6 @@
 import React  from "react";
 import styles from './style.module.css'
+import Link from 'next/link';
 
 class Footer extends React.Component{
 
@@ -13,7 +14,11 @@ class Footer extends React.Component{
                     <span>Instagram</span>
                     <span>TikTok</span>
                 </div>
-                <p>Mentions légales</p>
+                <p>
+                    <Link href="/legal-notices">
+                        <a>Mentions légales</a>
+                    </Link>
+                </p>
             </footer>
         );
     }
