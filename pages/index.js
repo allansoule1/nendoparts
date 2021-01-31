@@ -1,8 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
-import Link from 'next/link';
-import {Header, Footer, Content, Banner} from "../components";
-import '../components/Homepage/style.module.css'
+import {Header, Content, Banner} from "../components/homepage";
+import {Footer} from "../components"
 
 export default function Home() {
 
@@ -14,10 +13,11 @@ export default function Home() {
         "Alors, tentés ?"
     ];
     const contentText2 = [
+        "Qui sommes nous ?",
         "Une équipe de 3 personnes, adorant les Nendoroid.",
         "Nous nous sommes rencontrés à l’école EEMI.",
         "Lors d’un projet de cours, nous avons décidé de créer NendoParts afin que trouver les pièces Nendoroid dont vous avez besoin ne soit plus un casse-tête linguistique, monétaire, et aléatoire."
-    ]
+    ];
 
     return (
         <div className="container">
@@ -29,7 +29,7 @@ export default function Home() {
                 <Header  urlBackground={urlBackground}/>
                 <Content text={contentText1}/>
                 <Banner urlBackground={urlBackground}/>
-                <Content text={contentText2}/>
+                <Content text={contentText2} imgLeft={true}/>
                 <Footer/>
             </main>
             <style jsx>{`

@@ -18,11 +18,6 @@ class Header extends React.Component{
                     <div className={styles.menu}>
                         <ul className={styles.ul}>
                             <li className={styles.li}>
-                                <Link href="/list">
-                                    <a className={styles.a}>BROWSE</a>
-                                </Link>
-                            </li>
-                            <li className={styles.li}>
                                 <Link href="/contact">
                                     <a  className={styles.a}>CONTACT</a>
                                 </Link>

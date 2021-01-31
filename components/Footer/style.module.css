@@ -12,3 +12,8 @@
 .footer span{
     margin: 0 5px;
 }
+
+.footer a {
+    color: #ccc;
+    text-decoration: none;
+}
