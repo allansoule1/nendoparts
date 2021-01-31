@@ -13,20 +13,9 @@ export default function List({parts}) {
             </Head>
 
             <Header urlBackground={urlBackground}/>
-            {<ul>{parts.map((part) => {
-                return (<Link passHref href={`/nendo/${encodeURIComponent(part.reference)}`}>
-                    <a><Card part={part}/></a>
-                </Link>)
-            })}</ul>}
+            Legal
             <Footer/>
-            <style jsx>{`
-  ul{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-  }
-`}
-            </style>
+
             <style jsx global>{`
         html,
         body {
