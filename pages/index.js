@@ -3,6 +3,7 @@ import Head from 'next/head';
 import {Header, Content, Banner} from "../components/homepage";
 import {Footer} from "../components"
 
+
 export default function Home() {
 
     const urlBackground = "./background.jpg";

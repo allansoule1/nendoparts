@@ -1,6 +1,7 @@
 import React  from "react";
 import styles from './style.module.css'
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 class Footer extends React.Component{
 
@@ -8,9 +9,12 @@ class Footer extends React.Component{
         return (
             <footer className={styles.footer}>
                 <Link href={`/contact`}>
-                    <a className={styles.a}>
+                <motion.div className={styles.a}
+                            whileHover={{ scale: 1.2, rotate: 0 }}
+                            whileTap={{ scale: 0.8, rotate: 0, borderRadius: "100%" }}
+                >
                         Contact
-                    </a>
+                </motion.div>
                 </Link>
                 <div>
                     <span>Facebook</span>
@@ -19,9 +23,13 @@ class Footer extends React.Component{
                     <span>TikTok</span>
                 </div>
                 <Link href={`/legal`}>
-                    <a className={styles.a}>
-                        Mentions légales
-                    </a>
+                <motion.div className={styles.a}
+                            whileHover={{ scale: 1.2, rotate: 0 }}
+                            whileTap={{ scale: 0.8, rotate: 0, borderRadius: "100%" }}
+                >
+                    Mentions légales
+                </motion.div>
+                        
                 </Link>
 
             </footer>

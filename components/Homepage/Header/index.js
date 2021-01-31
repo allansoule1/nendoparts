@@ -1,10 +1,17 @@
 import React  from "react";
 import styles from './style.module.css'
 import Link from "next/link";
-
+import { motion } from "framer-motion";
 class Header extends React.Component{
 
     render() {
+        const bouncing = {
+            y: {
+              duration: 0.4,
+              yoyo: Infinity,
+              ease: "easeOut",
+            }
+        }
         return (
             <section
                 className={styles.section}
@@ -19,12 +26,18 @@ class Header extends React.Component{
                         <ul className={styles.ul}>
                             <li className={styles.li}>
                                 <Link href="/list">
-                                    <a className={styles.a}>BROWSE</a>
+                                <motion.div className={styles.a}
+                                    whileHover={{ scale: 1.2, rotate: 0 }}
+                                    whileTap={{ scale: 0.8, rotate: 0 }}
+                                    >BROWSE</motion.div>
                                 </Link>
                             </li>
                             <li className={styles.li}>
                                 <Link href="/contact">
-                                    <a  className={styles.a}>CONTACT</a>
+                                    <motion.div className={styles.a}
+                                    whileHover={{ scale: 1.2, rotate: 0 }}
+                                    whileTap={{ scale: 0.8, rotate: 0 }}
+                                    >CONTACT</motion.div>
                                 </Link>
                             </li>
                         </ul>
